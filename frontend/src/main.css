@@ -1,0 +1,23 @@
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.leaflet-container {
+    min-height: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-fields {
+    background: lightblue;
+    padding: 10em;
+    min-height: 500px;
+}
+
+textarea {
+    width: 100%;
+    margin: 2em 0;
+    padding: 0;
+    height: 4em;
+}
