@@ -23,8 +23,13 @@ This project is a pre-alpha prototype of an app with which regular citizens coul
 2. Make it so that our backend is able to save the reports to a database
 3. Make use of Schemas and Models in the backend!
 4. What are the commit messages of the three previous commits to this repo? And who made them?
+    > 1. Setting up GitHub Classroom Feedback by github-classroom[bot]
+    > 2. GitHub Classroom Feedback by github-classroom[bot]
+    > 3. Initial commit by github-classroom[bot]
 5. What is a captcha?
+    > Tool for catching bots
 6. Spend a maximum of 10 minutes on this question: how would you design a captcha for this form?
+    > :)
 7. **BONUS** Get all notifications from the backend and somehow show them in the fronted
 8. **SUPER BONUS** Implement a captcha for this form without using any extra npm dependencies
 9. **XTRA BONUS** Make the frontend look 𝓖𝓸𝓸𝓭

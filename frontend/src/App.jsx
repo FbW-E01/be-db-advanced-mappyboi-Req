@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import L from "leaflet";
+import axios from 'axios';
 
 import "leaflet/dist/leaflet.css";
 import "./main.css";
@@ -17,9 +18,19 @@ export default function App() {
   L.Marker.prototype.options.icon = DefaultIcon;
 
   console.log("BACKEND RUNNING AT " + process.env.REACT_APP_BACKEND);
-  function report() {
-    // TODO: Send abandoned bicycle report to the backend
-    alert("TBD");
+  async function report() {
+    const report = {
+      position: position.lat + "," + position.lng,
+      description: desc,
+    };
+    const url = process.env.REACT_APP_BACKEND + "notifications";
+
+    const result = await axios.post(url, report);
+    if (result.data && result.data.success) {
+      alert("Report sent successfully!");
+    } else {
+      alert("Failed :(");
+    }
   }
 
   return (
